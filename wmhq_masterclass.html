@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Break Your Limiting Belief Loop — WMHQ Masterclass</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,300;1,9..40,700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; list-style: none; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #FFD7E7;
+    color: #1c0a0a;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  a { text-decoration: none; }
+
+  /* NAV */
+  .nav {
+    background: #3D0D11;
+    padding: 14px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav-logo {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: #FFD7E7;
+  }
+  .btn-pink-pill {
+    background: #FF5B8B;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  /* HERO */
+  .hero {
+    background: #3D0D11;
+    padding: 56px 32px 48px;
+    border-radius: 0 0 32px 32px;
+  }
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,215,231,.12);
+    border: 1px solid rgba(255,215,231,.25);
+    border-radius: 100px;
+    padding: 6px 14px;
+    margin-bottom: 22px;
+  }
+  .hero-tag span {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: #FFB6CC;
+  }
+  .hero-dot {
+    width: 6px;
+    height: 6px;
+    background: #FF5B8B;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    flex-shrink: 0;
+  }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+
+  .hero h1 {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: .95;
+    color: #FFD7E7;
+    margin-bottom: 20px;
+    letter-spacing: -.03em;
+  }
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 300;
+    color: #FFB6CC;
+  }
+  .hero-sub {
+    font-size: 15px;
+    font-weight: 400;
+    color: #d4a0b0;
+    line-height: 1.65;
+    max-width: 560px;
+    margin-bottom: 30px;
+  }
+  .hero-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 36px;
+  }
+  .hero-pill {
+    background: rgba(255,215,231,.1);
+    border: 1px solid rgba(255,215,231,.2);
+    border-radius: 100px;
+    padding: 8px 18px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFD7E7;
+    letter-spacing: .05em;
+  }
+  .btn-hero {
+    background: #FFD7E7;
+    color: #3D0D11;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 18px 44px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  /* SECTIONS */
+  .section { padding: 52px 32px; }
+
+  .sec-eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: #E20019;
+    margin-bottom: 10px;
+  }
+  .sec-h2 {
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1.05;
+    color: #3D0D11;
+    letter-spacing: -.02em;
+    margin-bottom: 6px;
+  }
+  .sec-h2 em { font-style: italic; font-weight: 300; }
+
+  /* PAIN CARDS */
+  .pain-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 28px;
+  }
+  .pain-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px 18px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .pain-icon {
+    width: 34px;
+    height: 34px;
+    background: #FFE8EF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 18px;
+    font-weight: 900;
+    color: #E20019;
+    line-height: 1;
+  }
+  .pain-txt {
+    font-size: 13px;
+    font-weight: 500;
+    color: #3D0D11;
+    line-height: 1.55;
+  }
+
+  /* COVER SECTION */
+  .cover-wrap {
+    padding: 0 16px;
+  }
+  .cover-section {
+    background: #E20019;
+    padding: 52px 32px;
+    border-radius: 28px;
+  }
+  .cover-section .sec-eyebrow { color: rgba(255,215,231,.75); }
+  .cover-section .sec-h2 { color: #FFD7E7; }
+  .cover-sub {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: rgba(255,215,231,.75);
+    margin-bottom: 32px;
+    margin-top: 4px;
+  }
+  .cover-list { display: flex; flex-direction: column; gap: 12px; }
+  .cover-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: rgba(255,215,231,.12);
+    border-radius: 16px;
+    padding: 20px 22px;
+  }
+  .cover-num {
+    font-size: 30px;
+    font-weight: 900;
+    color: #FFB6CC;
+    line-height: 1;
+    min-width: 38px;
+  }
+  .cover-txt {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFD7E7;
+    line-height: 1.55;
+  }
+
+  /* OUTCOME */
+  .outcome-wrap { padding: 20px 16px 0; }
+  .outcome-section {
+    background: #FFB6CC;
+    padding: 52px 32px;
+    border-radius: 28px;
+    text-align: center;
+  }
+  .outcome-section .sec-eyebrow { color: #7C0116; }
+  .outcome-h2 {
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: #3D0D11;
+    letter-spacing: -.02em;
+    margin-bottom: 16px;
+  }
+  .outcome-h2 em { font-style: italic; font-weight: 300; }
+  .outcome-body {
+    font-size: 15px;
+    color: #5a1a24;
+    line-height: 1.7;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* PRICING */
+  .pricing-section { padding: 52px 32px 64px; }
+  .pricing-note {
+    font-size: 14px;
+    color: #7a3040;
+    margin-bottom: 32px;
+    margin-top: 8px;
+  }
+  .price-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+
+  .pc {
+    background: #fff;
+    border-radius: 24px;
+    padding: 28px 22px;
+    display: flex;
+    flex-direction: column;
+  }
+  .pc.feat { background: #3D0D11; }
+
+  .pc-tag {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    background: #FFE8EF;
+    color: #7C0116;
+    padding: 6px 14px;
+    border-radius: 100px;
+    display: inline-block;
+    margin-bottom: 18px;
+    align-self: flex-start;
+  }
+  .pc.feat .pc-tag { background: #FF5B8B; color: #fff; }
+
+  .pc-name {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1c0a0a;
+    margin-bottom: 14px;
+    letter-spacing: -.01em;
+  }
+  .pc.feat .pc-name { color: #FFD7E7; }
+
+  .pc-was {
+    font-size: 12px;
+    color: #aaa;
+    text-decoration: line-through;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  .pc-amount {
+    font-size: 52px;
+    font-weight: 900;
+    color: #E20019;
+    line-height: 1;
+    letter-spacing: -.03em;
+  }
+  .pc.feat .pc-amount { color: #FFB6CC; }
+
+  .pc-per {
+    font-size: 12px;
+    color: #8a6070;
+    margin-bottom: 22px;
+    font-weight: 500;
+    margin-top: 4px;
+  }
+  .pc.feat .pc-per { color: #d4a0b0; }
+
+  .pc-div { height: 1px; background: #FFE8EF; margin: 0 0 20px; }
+  .pc.feat .pc-div { background: rgba(255,182,204,.15); }
+
+  .pc-feats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+    flex: 1;
+  }
+  .pc-feat-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #3D0D11;
+    line-height: 1.5;
+  }
+  .pc.feat .pc-feat-item { color: #FFD7E7; }
+
+  .pc-check {
+    width: 20px;
+    height: 20px;
+    background: #FFE8EF;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+    font-size: 11px;
+    font-weight: 900;
+    color: #E20019;
+  }
+  .pc.feat .pc-check { background: rgba(255,91,139,.3); color: #FF5B8B; }
+
+  .btn-red {
+    background: #E20019;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 16px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .btn-hot-pink {
+    background: #FF5B8B;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 16px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .pc-note {
+    font-size: 11px;
+    color: #8a6070;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .pc.feat .pc-note { color: #d4a0b0; }
+
+  /* FOOTER */
+  .footer {
+    background: #3D0D11;
+    padding: 44px 32px;
+    text-align: center;
+    border-radius: 28px 28px 0 0;
+  }
+  .footer-big {
+    font-size: 32px;
+    font-weight: 800;
+    color: #FFD7E7;
+    letter-spacing: -.02em;
+    margin-bottom: 10px;
+  }
+  .footer-big em { font-style: italic; font-weight: 300; color: #FFB6CC; }
+  .footer-dm {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: #FF5B8B;
+  }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 44px; }
+    .pain-grid { grid-template-columns: 1fr; }
+    .price-grid { grid-template-columns: 1fr; }
+    .sec-h2 { font-size: 30px; }
+    .nav { padding: 12px 20px; }
+    .hero { padding: 40px 20px 36px; }
+    .section { padding: 40px 20px; }
+    .cover-section, .outcome-section { padding: 40px 20px; }
+    .pricing-section { padding: 40px 20px 52px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">Woman Mastery HQ</div>
+  <a href="https://www.jessicapinili.com/offers/ZNGSLMXy?coupon_code=BELIEFCLASSXWMHQ" class="btn-pink-pill">Get Access $27</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-tag">
+    <div class="hero-dot"></div>
+    <span>WMHQ Signature Masterclass</span>
+  </div>
+  <h1>Break Your<br><em>Limiting</em><br>Belief Loop</h1>
+  <p class="hero-sub">How to break the loop cycle between progress and pullback, and finally hold the results you keep building toward.</p>
+  <div class="hero-pills">
+    <div class="hero-pill">Wed 20 May 2026</div>
+    <div class="hero-pill">6:00 PM AEST</div>
+    <div class="hero-pill">60 Minutes</div>
+    <div class="hero-pill">Live + Replay</div>
+  </div>
+  <a href="#pricing" class="btn-hero">Reserve Your Spot</a>
+</section>
+
+<section class="section">
+  <p class="sec-eyebrow">This is for you if</p>
+  <h2 class="sec-h2">Sound<br><em>familiar?</em></h2>
+  <div class="pain-grid">
+    <div class="pain-card"><div class="pain-icon">+</div><p class="pain-txt">You hit a big month then immediately pull back, get sick, or go quiet</p></div>
+    <div class="pain-card"><div class="pain-icon">+</div><p class="pain-txt">Revenue swings $30K then $9K with no clear reason you can name</p></div>
+    <div class="pain-card"><div class="pain-icon">+</div><p class="pain-txt">You plan to raise prices then talk yourself out of it at the last second</p></div>
+    <div class="pain-card"><div class="pain-icon">+</div><p class="pain-txt">More money and visibility feel vaguely unsafe in your body</p></div>
+    <div class="pain-card"><div class="pain-icon">+</div><p class="pain-txt">You ghost high-ticket prospects without knowing why</p></div>
+    <div class="pain-card"><div class="pain-icon">+</div><p class="pain-txt">You know it is internal but do not know where to pull the thread</p></div>
+  </div>
+</section>
+
+<div class="cover-wrap">
+  <div class="cover-section">
+    <p class="sec-eyebrow">What We Cover</p>
+    <h2 class="sec-h2">60 minutes.<br><em>Four shifts.</em></h2>
+    <p class="cover-sub">Everything changes when you work at the root.</p>
+    <div class="cover-list">
+      <div class="cover-item"><div class="cover-num">01</div><p class="cover-txt">Identify the subconscious loops quietly capping your income</p></div>
+      <div class="cover-item"><div class="cover-num">02</div><p class="cover-txt">Understand why success itself triggers regression and how to stop the cycle</p></div>
+      <div class="cover-item"><div class="cover-num">03</div><p class="cover-txt">Rewire the identity patterns driving your revenue inconsistency</p></div>
+      <div class="cover-item"><div class="cover-num">04</div><p class="cover-txt">Build real nervous system safety around growth, visibility, and money</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="outcome-wrap">
+  <div class="outcome-section">
+    <p class="sec-eyebrow">Your Outcome</p>
+    <h2 class="outcome-h2">You will leave knowing<br><em>exactly what to shift.</em></h2>
+    <p class="outcome-body">You'll leave knowing the exact internal pattern that keeps pulling you back into the same results, even when you know what to do. This is not another strategy session. It's the root-level work that shifts the belief behind the behaviour.</p>
+  </div>
+</div>
+
+<section class="pricing-section" id="pricing">
+  <p class="sec-eyebrow">Choose Your Access</p>
+  <h2 class="sec-h2">Join the<br><em>masterclass.</em></h2>
+  <p class="pricing-note">Live Wed 20 May at 6:00 PM AEST. Replay included with every option.</p>
+  <div class="price-grid">
+    <div class="pc">
+      <div class="pc-tag">Single Access</div>
+      <div class="pc-name">This Masterclass</div>
+      <div class="pc-was">$97</div>
+      <div class="pc-amount">$27</div>
+      <p class="pc-per">One-time · 7 day replay</p>
+      <div class="pc-div"></div>
+      <ul class="pc-feats">
+        <li class="pc-feat-item"><div class="pc-check">✓</div>Live masterclass access</li>
+        <li class="pc-feat-item"><div class="pc-check">✓</div>Live Q&A</li>
+        <li class="pc-feat-item"><div class="pc-check">✓</div>7 day replay</li>
+        <li class="pc-feat-item"><div class="pc-check">✓</div>Belief loop framework</li>
+        <li class="pc-feat-item"><div class="pc-check">✓</div>Exclusive access to: WMHQ Belief Break Loop Tool</li>
+      </ul>
+      <a href="https://www.jessicapinili.com/offers/ZNGSLMXy?coupon_code=BELIEFCLASSXWMHQ" class="btn-red">Get Access — $27</a>
+      <p class="pc-note">Instant access on purchase</p>
+    </div>
+    <div class="pc feat">
+      <div class="pc-tag">Best Value</div>
+      <div class="pc-name">Join WMHQ 6 Months</div>
+      <div class="pc-amount">$450</div>
+      <p class="pc-per">per month · 6 month commitment</p>
+      <div class="pc-div"></div>
+      <ul class="pc-feats">
+        <li class="pc-feat-item"><div class="pc-check">✓</div>This masterclass included</li>
+        <li class="pc-feat-item"><div class="pc-check">✓</div>Monthly masterclasses</li>
+        <li class="pc-feat-item"><div class="pc-check">✓</div>Full WMHQ curriculum</li>
+        <li class="pc-feat-item"><div class="pc-check">✓</div>Live coaching calls</li>
+        <li class="pc-feat-item"><div class="pc-check">✓</div>Personal Portal App</li>
+        <li class="pc-feat-item"><div class="pc-check">✓</div>Virtual VIP Workshop</li>
+      </ul>
+      <a href="https://www.jessicapinili.com/offers/2xQreoAr/checkout" class="btn-hot-pink" style="display:block;text-align:center;text-decoration:none">Join WMHQ</a>
+      <p class="pc-note">Full membership, starts immediately</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p class="footer-big">See you <em>inside.</em></p>
+  <p class="footer-dm">Questions? DM @jesspinili on Instagram</p>
+</footer>
+
+</body>
+</html>
